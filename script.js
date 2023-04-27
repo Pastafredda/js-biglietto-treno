@@ -41,5 +41,5 @@ console.log(fixed);
 
 messaggio= `Il tuo biglietto costa ${fixed+cifra}`;
 
-document.getElementById("main-ticket").innerHTML= messaggio
+document.getElementById("costo").innerHTML= messaggio
 
