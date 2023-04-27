@@ -29,14 +29,17 @@ prezzoBiglietto = numeroKm * 0.21 ;
 console.log(prezzoBiglietto);
 
 // Sconto
-bigliettoSconto = Math.round(prezzoBiglietto * sconto / 100)  ;
-prezzoFinale = prezzoBiglietto - bigliettoSconto ;
-fixed=prezzoFinale.toFixed(2);
+bigliettoSconto = prezzoBiglietto * sconto / 100  ;
 console.log(bigliettoSconto);
+
+prezzoFinale = prezzoBiglietto - bigliettoSconto ;
 console.log(prezzoFinale);
+
+// Ridurre a 2 cifre decimali
+fixed=prezzoFinale.toFixed(2);
 console.log(fixed);
 
 messaggio= `Il tuo biglietto costa ${fixed+cifra}`;
 
-document.getElementById("ticket").innerHTML= messaggio
+document.getElementById("main-ticket").innerHTML= messaggio
 
